@@ -1,0 +1,72 @@
+   body.vs-body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.vs-container {
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vs-step {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.vs-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vs-checkbox-box {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  border: 1px solid #333;
+}
+
+.vs-checkbox-box input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 3px;
+  accent-color: #1db954;
+}
+
+.vs-legal-text {
+  font-size: 12px;
+  color: #b3b3b3;
+}
+
+.vs-legal-text a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.vs-legal-text a:hover {
+  text-decoration: underline;
+}
+
+.vs-signup-btn {
+  background-color: #1db954;
+  color: #000;
+  padding: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  margin-top: 20px;
+}

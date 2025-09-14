@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - VibeScape</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="vs-signup-body">
+
+<form action="../backend/signup.php" method="POST" class="vs-form">
+
+  <h1 class="vs-signup-heading">Sign up to<br>start listening</h1>
+
+  <!-- Email -->
+  <label for="email" class="vs-signup-label">Email address</label>
+  <input type="email" id="email" name="email" placeholder="name@domain.com" class="vs-signup-input" required>
+
+
+  <label for="password" class="vs-password-label">Password</label>
+  <div class="vs-password-input-wrap">
+  <input type="password" class="vs-password-input" id="passwordInput" name="password" placeholder="Enter password" required>
+
+
+  <span class="vs-password-toggle" onclick="togglePassword()">👁️</span>
+</div>
+
+
+  <!-- Name -->
+  <div class="vs-form-group">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="This name will appear on your profile" required />
+  </div>
+
+  <!-- DOB -->
+  <div class="vs-form-group">
+    <label>Date of birth</label>
+    <div class="vs-dob-group">
+      <input type="text" name="day" placeholder="dd" class="vs-dob-input" required />
+      <select name="month" required class="vs-dob-input">
+        <option disabled selected>Month</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+      <input type="text" name="year" placeholder="yyyy" class="vs-dob-input" required />
+    </div>
+  </div>
+
+  <!-- Gender -->
+  <div class="vs-form-group">
+    <label>Gender</label>
+    <div class="vs-radio-group">
+      <label><input type="radio" name="gender" value="man" required /> Man</label>
+      <label><input type="radio" name="gender" value="woman" /> Woman</label>
+      <label><input type="radio" name="gender" value="none" /> Prefer not to say</label>
+    </div>
+  </div>
+  <!-- Submit -->
+  <button type="submit" class="vs-signup-btn">Sign Up</button>
+  <p class="vs-login-link">
+    Already have an account? <a href="./login.html">Log in here</a>.
+  </p>
+  
+</form>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script>
+  function togglePassword() {
+    const input = document.getElementById("passwordInput");
+    input.type = input.type === "password" ? "text" : "password";
+  }
+</script>
+
+
+</body>
+</html>
